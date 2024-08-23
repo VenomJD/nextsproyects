@@ -48,7 +48,7 @@ body {
   font-size: 14px;
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+
 }
 .grid{
   display: grid;
@@ -72,8 +72,14 @@ body {
   width: 48px;
   height: 48px;
 }
-#html::after{
+.html::after{
   background-image: url(/logohtml.svg);
+}
+.js::after{
+  background-image: url(/logojavascrip.svg);
+}
+.css::after{
+  background-image: url(/logocss.svg);
 }
 #output{
   border: 0;
