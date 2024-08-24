@@ -24,6 +24,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  overflow: hidden;
 }
 
 @layer utilities {
@@ -50,11 +51,14 @@ body {
   width: 100vw;
 
 }
+main{
+  height: 90%;
+}
 .grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  height: 100vh;
+  height: 100%;
 }
 
 
