@@ -55,7 +55,7 @@ const SaveProjectForm = ({ onSave, userId }) => {
           className="mt-1 p-2 w-full border border-gray-300 rounded"
         />
       </div>
-      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded">
+      <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded w-full">
         Guardar Proyecto
       </button>
     </form>

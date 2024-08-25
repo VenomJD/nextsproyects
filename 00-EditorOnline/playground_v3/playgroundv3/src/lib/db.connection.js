@@ -8,7 +8,7 @@ export async function connectDB() {
     if (conn.isConnected) return;
 
     try {
-        const db = await mongoose.connect('mongodb://localhost/hcjdatabase');
+        const db = await mongoose.connect('mongodb://localhost/playgroundDB');
         console.log(db.connection.db.databaseName)
         conn.isConnected = mongoose.connections[0].readyState;
 
