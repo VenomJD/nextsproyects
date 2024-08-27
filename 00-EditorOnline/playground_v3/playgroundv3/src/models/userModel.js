@@ -10,4 +10,7 @@ const userSchema = new Schema({
     projects: [{ type: Schema.Types.ObjectId, ref: 'Project' }],
   });
 
-  export default   models.users || model('users',userSchema)
+
+  const UserModel = models.User || model('User', userSchema);
+
+export default UserModel;
