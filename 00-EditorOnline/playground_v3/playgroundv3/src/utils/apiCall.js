@@ -42,18 +42,6 @@ export async function getUserByEmail(email) {
     }
 }
 
-export async function getUserByEmail(email) {
-    try {
-        const response = await fetch(`http://localhost:3000/api/usuarios?email=${encodeURIComponent(email)}`);
-        if (!response.ok) {
-            throw new Error(`Error al obtener el usuario por email: ${response.statusText}`);
-        }
-        return await response.json();
-    } catch (error) {
-        console.error(error);
-        throw error;  // Vuelve a lanzar el error para manejarlo externamente si es necesario
-    }
-}
 
 
 export async function createUser({username, email, password}) {
